@@ -1,3 +1,7 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
 
 ul {
     list-style-type: none;
@@ -16,7 +20,7 @@ li a {
 
 a{
     text-decoration: none;
-    color: black
+    color: black;
   }
 
 a:hover{
@@ -25,11 +29,11 @@ a:hover{
 
 .floatright {
     float: right;
+    padding-right: 20px;
 }
 
 .container{
-    width:98%;
-    margin:auto;
+    width: 100%;
 }
 
 #google-logo{
@@ -39,19 +43,28 @@ a:hover{
     justify-content: center;
 }
 
-#input-field{
+#input-area{
     display: flex;
     padding-top: 20px;
-    padding-left: 32%;
+    padding-left: 32%; 
     padding-right: 32%;
+    max-width: 700px;
     justify-content: center;
 }
 
 .input-field{
     border: 1px solid lightgray;
-    width: 100%;
+    width: 900px;
+    min-width: 500px;
     height: 45px;
-    border-radius: 25%;
+    border-radius: 25px;
+    background-image: url(../images/search.png);
+    background-repeat: no-repeat;
+    background-position: 10px;
+    background-size: 4%;
+    text-indent: 6%;
+    outline: none;
+
 }
 
 .input-field:hover {
@@ -61,21 +74,37 @@ a:hover{
 #buttons{
     display: flex;
     flex-wrap: nowrap;
-    padding-top: 30px;
+    padding-top: 25px;
     justify-content: center;
 }
 
 .button{
-    padding-left: 1rem;
-    padding-right: 1rem;
+    margin: 10px 10px;
+    border: none;
+    background-color: #f8f9fa;
+    height: 36px;
+    font-size: 14px;
+    width: 180px;
+    min-width: 54px;
+    border-radius: 4px;
+    color: #3c4043;
+}
+
+.button:hover {
+    border: 1px solid lightgray;
+    box-shadow: 1px 1px 1px lightgray;
 }
 
 #main-header{
     position: fixed;
     top: 0;
+    float:none;
 }
 
 #main-footer{
     position: fixed;
     bottom: 0;
+    width: fit-content;
+    font-size: 15px;
+    background-color: #f2f2f2;
 }
