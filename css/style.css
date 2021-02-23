@@ -5,5 +5,15 @@ ul {
 }
 
 li {
-    display:inline;
+    float:left;
+}
+
+li a {
+    display:block;
+    padding:15px;
+    background-color:red;
+}
+
+.floatright {
+    float:right;
 }
