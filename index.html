@@ -1,14 +1,15 @@
 <!DOCTYPE html>
-    <head>
-        <title>Google</title>
-        <link rel="stylesheet" type="text/css" href="css/style.css">
-    </head>
+
+<head>
+    <title>Google</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
 
 <body>
-    <header id="main-header">
+    <header id="main-header" class="container">
         <ul>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Store</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Store</a></li>
             <div class="floatright">
                 <li><a href="#">Gmail</a></li>
                 <li><a href="#">Pictures</a></li>
@@ -18,27 +19,32 @@
         </ul>
     </header>
 
-    <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
+<div id="google-logo">
+    <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google logo">
+</div>
 
-    <div>
-       <input type="text">
-       <input type="submit" name="search" value="Google Search">
-       <input type="submit" name="lucky" value="I'm Feeling Lucky">
-    </div>
+<div id="input-field">
+    <input type="text" class="input-field">
+</div>
+
+<div id="buttons">
+    <input type="submit" class="button" name="search" value="Google Search">
+    <input type="submit" class="button" name="lucky" value="I'm Feeling Lucky">
+</div>
 
 
-    <footer id="main-fotoer">
-        <ul>
-                <li><a href="#">Advertising</a></li>
-                <li><a href="#">Business</a></li>
-                <li><a href="#">How Search works</a></li>
-            <div class="floatright">
-                <li><a href="#">Privacy</a></li>
-                <li><a href="#">Terms</a></li>
-                <li><a href="#">Settings</a></li>
-            </div>     
-        </ul>
-    </footer>
+<footer id="main-footer" class="container">
+    <ul>
+        <li><a href="#">Advertising</a></li>
+        <li><a href="#">Business</a></li>
+        <li><a href="#">How Search works</a></li>
+        <div class="floatright">
+            <li><a href="#">Privacy</a></li>
+            <li><a href="#">Terms</a></li>
+            <li><a href="#">Settings</a></li>
+        </div>     
+    </ul>
+</footer>
 
 </body>
 
